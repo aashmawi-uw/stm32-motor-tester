@@ -103,11 +103,11 @@ int main(void)
 		uint16_t ADC_value= ( (received_data[1] & 0x03) << 8 ) | received_data[2];
 
 
-		uint32_t PWM_value = (ADC_value *2937.5 / 1023) + 2937.5;
+		uint32_t PWM_value = (ADC_value *3200/ 1023) + 3200;
 		/*
 		 	 - Max number in 10 bits: 1023
-		 	 - Prescaler: 15
-		 	 - Period: 58,750
+		 	 - Prescaler: 14
+		 	 - Period: 64000
 		 */
 
 		TIM1->CCR1 = PWM_value; // To set the duty cycle
