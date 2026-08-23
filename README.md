@@ -1,10 +1,21 @@
-# Embedded-Bootcamp
+STM32 Motor Tester
+==================
 
-## Welcome to the WARG Firmware Bootcamp! 
+An embedded motor-testing application developed using an STM32
+microcontroller.
 
-Full instructions can be found on the [Bootcamp Confluence Page](https://uwarg-docs.atlassian.net/wiki/spaces/BOOT/pages/1997373445/2021+Firmware+Bootcamp).
+**Features:**
+- SPI communication with an external ADC
+- Potentiometer-based motor control
+- PWM generation using STM32 timers
+- ADC-to-PWM signal mapping
+- Hardware debugging and validation
 
-This repository contains a basic STM32IDE project that will be modified to complete the bootcamp.
+**Hardware:**
+- STM32 microcontroller
+- External ADC
+- Potentiometer
+- Motor
 
-For git specific questions and direction please visit our [Git Tutorial](https://uwarg-docs.atlassian.net/wiki/spaces/TUT/pages/1544257554/Git+and+GitHub+Tutorial).
-
+  
+<sub>*Context: Completed as part of the University of Waterloo Aerial Robotics Group (WARG) Embedded Bootcamp.*</sub>
